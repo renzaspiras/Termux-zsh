@@ -74,6 +74,7 @@ finish_install() {
 	termux-reload-settings
 	echo -e "${green}Setup Completed!${nocol}"
 	echo -e "${green}Please restart Termux!${nocol}"
+ 	source .zshrc
 }
 
 # Start installation

@@ -24,8 +24,6 @@ fi
 # Anti Bloat
 [ -d "hello" ] && rm -r "hello"
 
-alias update='yes | pkg upgrade && yes | pkg install git && git clone https://github.com/renzaspiras/arch-termux.git hello && cd hello && bash setup.sh'
-
 # Needed to make gpg(2) work
 export GPG_TTY="${TTY}"
 

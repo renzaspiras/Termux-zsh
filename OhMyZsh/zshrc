@@ -24,6 +24,7 @@ fi
 # Anti Bloat
 [ -d "hello" ] && rm -r "hello"
 
+unalias ls 
 alias ls='lsd'
 
 # Needed to make gpg(2) work

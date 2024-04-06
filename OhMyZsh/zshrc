@@ -26,7 +26,7 @@ fi
 # Anti Bloat
 [ -d "hello" ] && rm -r "hello"
 
-ENV=TERMUX
+ENV='TERMUX'
 
 alias lx='lsd'  # Alias lx to lsd
 

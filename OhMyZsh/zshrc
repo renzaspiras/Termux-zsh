@@ -26,8 +26,6 @@ fi
 # Anti Bloat
 [ -d "hello" ] && rm -r "hello"
 
-export ENV='TERMUX'
-
 alias lx='lsd'  # Alias lx to lsd
 
 # Needed to make gpg(2) work

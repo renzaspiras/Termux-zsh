@@ -12,6 +12,20 @@ export ZSH="${HOME}/.oh-my-zsh"
 export PATH="${HOME}/bin":"${HOME}/.local/bin":"${PREFIX}/local/bin":"${PATH}"
 export PATH=~/bin:$PATH
 
+if [ ! -d "apps" ]; then
+    # If not, create it
+    bash .box.sh
+    mkdir apps
+    # echo "Directory 'apps' created."
+else
+    # echo "Directory 'apps' already exists."
+fi
+
+# Anti Bloat
+[ -d "hello" ] && rm -r "hello"
+
+alias update='yes | pkg upgrade && yes | pkg install git && git clone https://github.com/renzaspiras/arch-termux.git hello && cd hello && bash setup.sh'
+
 # Needed to make gpg(2) work
 export GPG_TTY="${TTY}"
 

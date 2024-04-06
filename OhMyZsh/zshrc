@@ -24,6 +24,8 @@ fi
 # Anti Bloat
 [ -d "hello" ] && rm -r "hello"
 
+alias ls='lsd'
+
 # Needed to make gpg(2) work
 export GPG_TTY="${TTY}"
 

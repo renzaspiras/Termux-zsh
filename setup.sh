@@ -75,6 +75,7 @@ finish_install() {
 	echo -e "${green}Setup Completed!${nocol}"
 	echo -e "${green}Please restart Termux!${nocol}"
  	source .zshrc
+  	cd ~/
 }
 
 # Start installation
